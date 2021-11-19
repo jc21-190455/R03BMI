@@ -18,7 +18,19 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            //94
+            //不快指数参考にする
+            double h;   //height
+            double w;   //weight
+            double bmi;
 
+            h=double.Parse(height.Text);
+            w=double.Parse(weight.Text);
+            //bmi=w/(h*h);
+            //result=bmi;
+            result=w/(h*h).ToString;
+
+            //heighit.text="";
         }
     }
 }
