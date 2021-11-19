@@ -28,7 +28,10 @@ namespace R03BMI
             w=double.Parse(weight.Text);
             //bmi=w/(h*h);
             //result=bmi;
-            result=w/(h*h).ToString;
+            bmi=w/(h*h);
+           //result=Math.Round(bmi,1,MidpointRounding.AwayFromZero);
+            result=(Math.Round(bmi,1,MidpointRounding.AwayFromZero)).ToString;
+            //result=w/(h*h).ToString;
 
             //heighit.text="";
         }
