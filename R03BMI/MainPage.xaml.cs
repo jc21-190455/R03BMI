@@ -18,21 +18,20 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //94
-            //不快指数参考にする
-            double h;   //height
-            double w;   //weight
+            
+            double h;  
+            double w;   
             double bmi;
 
             h=double.Parse(height.Text);
             w=double.Parse(weight.Text);
 
-            if (h>100)//mにする
+            if (h>100)
             {
                 h=h/100;
             }
 
-            if (w>1000)//kgにする
+            if (w>1000)
             {
                 w=w/1000;
             }
