@@ -26,14 +26,21 @@ namespace R03BMI
 
             h=double.Parse(height.Text);
             w=double.Parse(weight.Text);
-            //bmi=w/(h*h);
-            //result=bmi;
-            bmi=w/(h*h);
-           //result=Math.Round(bmi,1,MidpointRounding.AwayFromZero);
-            result=(Math.Round(bmi,1,MidpointRounding.AwayFromZero)).ToString;
-            //result=w/(h*h).ToString;
 
-            //heighit.text="";
+            if (h>100)//mにする
+            {
+                h=h/100;
+            }
+
+            if (w>1000)//kgにする
+            {
+                w=w/1000;
+            }
+          
+           
+            bmi=w/(h*h);
+            result=(Math.Round(bmi,1,MidpointRounding.AwayFromZero)).ToString;
+          
         }
     }
 }
