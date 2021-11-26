@@ -38,7 +38,7 @@ namespace R03BMI
           
            
             bmi=w/(h*h);
-            result=(Math.Round(bmi,1,MidpointRounding.AwayFromZero)).ToString;
+            result.Text=(Math.Round(bmi,1,MidpointRounding.AwayFromZero)).ToString;
           
         }
     }
