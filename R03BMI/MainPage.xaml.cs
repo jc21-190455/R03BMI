@@ -10,6 +10,12 @@ namespace R03BMI
 {
     public partial class MainPage : ContentPage
     {
+          　double h;  
+            double w;   
+            double bmi;
+
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -19,9 +25,7 @@ namespace R03BMI
         private void Button_Clicked(object sender, EventArgs e)
         {
             
-            double h;  
-            double w;   
-            double bmi;
+          
 
             h=double.Parse(height.Text);
             w=double.Parse(weight.Text);
