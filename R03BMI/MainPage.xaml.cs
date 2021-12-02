@@ -86,7 +86,7 @@ namespace R03BMI
                 result.Text = ex.Message;
                 Console.WriteLine(ex.Message);
             }
-
+            //aaa
 
             }
         }
