@@ -10,9 +10,7 @@ namespace R03BMI
 {
     public partial class MainPage : ContentPage
     {
-          　double h;  
-            double w;   
-            double bmi;
+
 
 
 
@@ -35,12 +33,12 @@ namespace R03BMI
 
                 if (height2 >= 10)
                 {
-                    height2 = height2 / 100;
+                    height2 /= 100;
                 }
 
                 if (weight2 >= 1000)
                 {
-                    weight2 = weight2 / 1000;
+                    weight2 /= 1000;
                 }
 
 
@@ -86,7 +84,7 @@ namespace R03BMI
                 result.Text = ex.Message;
                 Console.WriteLine(ex.Message);
             }
-            //aaa
+            
 
             }
         }
