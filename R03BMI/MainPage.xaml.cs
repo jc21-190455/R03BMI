@@ -43,7 +43,7 @@ namespace R03BMI
 
 
 
-                double BMI = weight2 / height2 * height2;
+                double BMI = weight2 / (height2 * height2);
                 double BMI2 = Math.Round(BMI, 1);
                 string status = null;
 
